@@ -1,0 +1,81 @@
+@use "nav";
+$logowidth  : 9rem;
+$winered    : #9D0817;
+$Gold       : #A9894B;
+$white      : #e6e6e6;
+:root{
+    --wineRed:#{$winered};
+    --Gold: #{$Gold};
+    --white: #{$white};
+}
+@font-face {
+    font-family: 'w_yekan';
+    src: url('fonts/W_yekan.TTF') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+    font-family: 'w_yekan';
+    src: url('fonts/W_yekan Bold.TTF') format('truetype'); 
+    font-weight: bold;
+}
+body{
+    font-family: 'w_yekan' !important;
+    background: url("../images/Meddos-background-1.jpg");
+}
+.logo{
+    width:$logowidth;
+}
+#supermenu{
+    background-color: var(--wineRed);
+    color : var(--white)
+}
+#supermenu a,.h-7,.w-7{
+    color: white; 
+}
+#mainmenu{
+    padding: 1rem;
+    &>ul{
+        margin: 0;
+        &>li{
+            padding: 0;
+            &>a{
+                padding: 1rem 1rem 2rem 1rem;
+            }
+        }
+    }
+}
+.swiper-button-next, .swiper-button-prev{
+    color:var(--wineRed) !important;
+}
+.cat-prod,.special {
+    background: transparent !important;
+}
+.home section h2 {
+    margin: 0;
+    position: relative;
+}
+.home section h2::after {
+    content: ' ';
+    width: 8rem;
+    height: 1px;
+    display: block;
+    position: absolute;
+    border-bottom: 2px solid var(--wineRed);
+    bottom: 5px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.home .flash {
+    background: var(--wineRed);
+    color: white;
+}
+footer {
+    background: var(--wineRed);
+    color: #cccccc;
+    padding: 5rem 0 0 0;
+    text-align: center;
+}
+@media(min-width:768px){
+    .home section h2 {
+        margin: 1rem 0 2rem 0;
+    }
+}

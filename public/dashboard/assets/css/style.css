@@ -1,0 +1,22 @@
+.md-form label.forcheckbox{
+    top:-2rem !important;
+}
+input[type=text].form-control,
+input[type=number].form-control, 
+input[type=email].form-control, 
+input[type=password].form-control {
+    border: none !important;
+    border-bottom: 1px solid white !important;
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+    border-bottom-color: white !important;
+}
+textarea.form-control{
+    border: 1px solid white !important;
+    border-top: none !important;
+    border-left-color: #444141 !important;
+    border-right-color: #444141 !important;
+}
+.modal-dialog.modal-fullscreen,.modal-content{
+    background-color:#232323;
+}
